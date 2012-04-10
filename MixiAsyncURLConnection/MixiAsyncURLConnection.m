@@ -8,7 +8,7 @@
 
 #import "MixiAsyncURLConnection.h"
 
-static NSString const *kMGTimeoutDesctiption = @"インターネット接続がオフラインのようです。";
+static NSString const *kMixiTimeoutDesctiption = @"インターネット接続がオフラインのようです。";
 
 @implementation MixiAsyncURLConnection
 @synthesize data;
@@ -72,7 +72,7 @@ static NSString const *kMGTimeoutDesctiption = @"インターネット接続が�
 -(void)timeout
 {
     [self cancel];
-    [self connection:connection didFailWithError:[NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorTimedOut userInfo:[NSDictionary dictionaryWithObjectsAndKeys:kMGTimeoutDesctiption,NSLocalizedDescriptionKey, nil]]];
+    [self connection:connection didFailWithError:[NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorTimedOut userInfo:[NSDictionary dictionaryWithObjectsAndKeys:kMixiTimeoutDesctiption,NSLocalizedDescriptionKey, nil]]];
 }
 
 #pragma mark - NSURLConnection delegate methods

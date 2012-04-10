@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (retain,nonatomic) IBOutlet UITextView * textView;
+- (IBAction)pressButton1:(id)sender;
+- (IBAction)pressButton2:(id)sender;
+- (IBAction)pressButton3:(id)sender;
 @end

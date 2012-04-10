@@ -7,12 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "MixiAsyncURLConnection.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+@synthesize textView;
 
 - (void)viewDidLoad
 {
@@ -24,11 +26,42 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.textView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)doRequest:(NSURLRequest *)request cBlock:(completeBlock_t)cBlock pBlock:(progressBlock_t)pBlock eBlock:(errorBlock_t)eBlock
+{
+    MixiAsyncURLConnection * connection = [[[MixiAsyncURLConnection alloc]initWithRequest:request 
+                                                                               timeoutSec:10.0f 
+                                                                            completeBlock:cBlock 
+                                                                            progressBlock:pBlock 
+                                                                               errorBlock:eBlock] autorelease];
+    [connection performRequest];
+}
+
+- (IBAction)pressButton1:(id)sender
+{
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mixi.jp/"]];
+    [self doRequest:req cBlock:^(id connection, NSData *data){
+        self.textView.text = [[[NSString alloc]initWithData:data encoding:NSJapaneseEUCStringEncoding]autorelease];
+    }pBlock:nil eBlock:nil];
+}
+
+- (IBAction)pressButton2:(id)sender
+{
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://yahoo.co.jp/"]];
+    [self doRequest:req cBlock:^(id connection, NSData *data){
+        self.textView.text = [[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]autorelease];
+    }pBlock:nil eBlock:nil];    
+}
+
+- (IBAction)pressButton3:(id)sender
+{
 }
 
 @end
