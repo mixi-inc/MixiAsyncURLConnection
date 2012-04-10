@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		809D012515340F5900686692 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D012415340F5900686692 /* UIKit.framework */; };
+		809D012715340F5900686692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D012615340F5900686692 /* Foundation.framework */; };
+		809D012915340F5900686692 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809D012815340F5900686692 /* CoreGraphics.framework */; };
+		809D012F15340F5900686692 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 809D012D15340F5900686692 /* InfoPlist.strings */; };
+		809D013115340F5900686692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D013015340F5900686692 /* main.m */; };
+		809D013515340F5900686692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D013415340F5900686692 /* AppDelegate.m */; };
+		809D013815340F5900686692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D013715340F5900686692 /* ViewController.m */; };
+		809D013B15340F5900686692 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809D013915340F5900686692 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		809D012015340F5900686692 /* MixiAsyncURLConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiAsyncURLConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		809D012415340F5900686692 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		809D012615340F5900686692 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		809D012815340F5900686692 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		809D012C15340F5900686692 /* MixiAsyncURLConnection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixiAsyncURLConnection-Info.plist"; sourceTree = "<group>"; };
+		809D012E15340F5900686692 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		809D013015340F5900686692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		809D013215340F5900686692 /* MixiAsyncURLConnection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixiAsyncURLConnection-Prefix.pch"; sourceTree = "<group>"; };
+		809D013315340F5900686692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		809D013415340F5900686692 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		809D013615340F5900686692 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		809D013715340F5900686692 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		809D013A15340F5900686692 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809D011D15340F5900686692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D012515340F5900686692 /* UIKit.framework in Frameworks */,
+				809D012715340F5900686692 /* Foundation.framework in Frameworks */,
+				809D012915340F5900686692 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		809D011515340F5900686692 = {
+			isa = PBXGroup;
+			children = (
+				809D012A15340F5900686692 /* MixiAsyncURLConnection */,
+				809D012315340F5900686692 /* Frameworks */,
+				809D012115340F5900686692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		809D012115340F5900686692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809D012015340F5900686692 /* MixiAsyncURLConnection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809D012315340F5900686692 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				809D012415340F5900686692 /* UIKit.framework */,
+				809D012615340F5900686692 /* Foundation.framework */,
+				809D012815340F5900686692 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		809D012A15340F5900686692 /* MixiAsyncURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				809D013315340F5900686692 /* AppDelegate.h */,
+				809D013415340F5900686692 /* AppDelegate.m */,
+				809D013615340F5900686692 /* ViewController.h */,
+				809D013715340F5900686692 /* ViewController.m */,
+				809D013915340F5900686692 /* ViewController.xib */,
+				809D012B15340F5900686692 /* Supporting Files */,
+			);
+			path = MixiAsyncURLConnection;
+			sourceTree = "<group>";
+		};
+		809D012B15340F5900686692 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				809D012C15340F5900686692 /* MixiAsyncURLConnection-Info.plist */,
+				809D012D15340F5900686692 /* InfoPlist.strings */,
+				809D013015340F5900686692 /* main.m */,
+				809D013215340F5900686692 /* MixiAsyncURLConnection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809D011F15340F5900686692 /* MixiAsyncURLConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809D013E15340F5900686692 /* Build configuration list for PBXNativeTarget "MixiAsyncURLConnection" */;
+			buildPhases = (
+				809D011C15340F5900686692 /* Sources */,
+				809D011D15340F5900686692 /* Frameworks */,
+				809D011E15340F5900686692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixiAsyncURLConnection;
+			productName = MixiAsyncURLConnection;
+			productReference = 809D012015340F5900686692 /* MixiAsyncURLConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		809D011715340F5900686692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "mixi Inc.";
+			};
+			buildConfigurationList = 809D011A15340F5900686692 /* Build configuration list for PBXProject "MixiAsyncURLConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 809D011515340F5900686692;
+			productRefGroup = 809D012115340F5900686692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809D011F15340F5900686692 /* MixiAsyncURLConnection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809D011E15340F5900686692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D012F15340F5900686692 /* InfoPlist.strings in Resources */,
+				809D013B15340F5900686692 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		809D011C15340F5900686692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809D013115340F5900686692 /* main.m in Sources */,
+				809D013515340F5900686692 /* AppDelegate.m in Sources */,
+				809D013815340F5900686692 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		809D012D15340F5900686692 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809D012E15340F5900686692 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		809D013915340F5900686692 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809D013A15340F5900686692 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		809D013C15340F5900686692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		809D013D15340F5900686692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809D013F15340F5900686692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiAsyncURLConnection/MixiAsyncURLConnection-Prefix.pch";
+				INFOPLIST_FILE = "MixiAsyncURLConnection/MixiAsyncURLConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		809D014015340F5900686692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiAsyncURLConnection/MixiAsyncURLConnection-Prefix.pch";
+				INFOPLIST_FILE = "MixiAsyncURLConnection/MixiAsyncURLConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		809D011A15340F5900686692 /* Build configuration list for PBXProject "MixiAsyncURLConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D013C15340F5900686692 /* Debug */,
+				809D013D15340F5900686692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809D013E15340F5900686692 /* Build configuration list for PBXNativeTarget "MixiAsyncURLConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809D013F15340F5900686692 /* Debug */,
+				809D014015340F5900686692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 809D011715340F5900686692 /* Project object */;
+}
