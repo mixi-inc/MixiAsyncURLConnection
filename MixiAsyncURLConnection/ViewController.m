@@ -54,7 +54,7 @@
 
 - (IBAction)pressButton2:(id)sender
 {
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://yahoo.co.jp/"]];
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/"]];
     [self doRequest:req cBlock:^(id connection, NSData *data){
         self.textView.text = [[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]autorelease];
     }pBlock:nil eBlock:nil];    
@@ -62,6 +62,12 @@
 
 - (IBAction)pressButton3:(id)sender
 {
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/"]];
+    [req setHTTPMethod:@"POST"];
+    [req setHTTPBody:[@"data=hogefuga" dataUsingEncoding:NSUTF8StringEncoding]];
+    [self doRequest:req cBlock:^(id connection, NSData *data){
+        self.textView.text = [[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]autorelease];
+    }pBlock:nil eBlock:nil];
 }
 
 @end
