@@ -15,6 +15,7 @@
 		809D013515340F5900686692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D013415340F5900686692 /* AppDelegate.m */; };
 		809D013815340F5900686692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D013715340F5900686692 /* ViewController.m */; };
 		809D013B15340F5900686692 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809D013915340F5900686692 /* ViewController.xib */; };
+		809D01481534105400686692 /* MixiAsyncURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 809D01471534105400686692 /* MixiAsyncURLConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		809D013615340F5900686692 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		809D013715340F5900686692 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		809D013A15340F5900686692 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		809D01461534105400686692 /* MixiAsyncURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiAsyncURLConnection.h; sourceTree = "<group>"; };
+		809D01471534105400686692 /* MixiAsyncURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiAsyncURLConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +82,12 @@
 			children = (
 				809D013315340F5900686692 /* AppDelegate.h */,
 				809D013415340F5900686692 /* AppDelegate.m */,
+				809D01461534105400686692 /* MixiAsyncURLConnection.h */,
+				809D01471534105400686692 /* MixiAsyncURLConnection.m */,
+				809D012B15340F5900686692 /* Supporting Files */,
 				809D013615340F5900686692 /* ViewController.h */,
 				809D013715340F5900686692 /* ViewController.m */,
 				809D013915340F5900686692 /* ViewController.xib */,
-				809D012B15340F5900686692 /* Supporting Files */,
 			);
 			path = MixiAsyncURLConnection;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				809D013115340F5900686692 /* main.m in Sources */,
 				809D013515340F5900686692 /* AppDelegate.m in Sources */,
 				809D013815340F5900686692 /* ViewController.m in Sources */,
+				809D01481534105400686692 /* MixiAsyncURLConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +244,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MixiAsyncURLConnection/MixiAsyncURLConnection-Prefix.pch";
 				INFOPLIST_FILE = "MixiAsyncURLConnection/MixiAsyncURLConnection-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -249,6 +256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MixiAsyncURLConnection/MixiAsyncURLConnection-Prefix.pch";
 				INFOPLIST_FILE = "MixiAsyncURLConnection/MixiAsyncURLConnection-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,6 +281,7 @@
 				809D014015340F5900686692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
