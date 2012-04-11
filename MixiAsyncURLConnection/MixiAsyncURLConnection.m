@@ -8,7 +8,7 @@
 
 #import "MixiAsyncURLConnection.h"
 
-static NSString const *kMixiTimeoutDesctiption = @"インターネット接続がオフラインのようです。";
+static NSString const *kMixiTimeoutDesctiption = @"タイムアウトしました。";
 
 @implementation MixiAsyncURLConnection
 @synthesize data;
