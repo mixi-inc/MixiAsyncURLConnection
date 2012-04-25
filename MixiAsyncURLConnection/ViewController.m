@@ -39,6 +39,8 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+//ボタン1を押した時のイベントハンドラ
+//http://mixi.jp/にGETリクエストを投げて、レスポンスをtextViewに表示します。
 - (IBAction)pressButton1:(id)sender
 {
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://mixi.jp/"]];
@@ -50,6 +52,8 @@
     [connection performRequest];
 }
 
+//ボタン2を押した時のイベントハンドラ
+//http://localhost:3000/にGETリクエストを投げて、レスポンスをtextViewに表示します。
 - (IBAction)pressButton2:(id)sender
 {
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/"]];
@@ -64,6 +68,8 @@
 
 }
 
+//ボタン3を押した時のイベントハンドラ
+//http://localhost:3000/にPOSTリクエストを投げて、レスポンスをtextViewに表示します。
 - (IBAction)pressButton3:(id)sender
 {
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/"]];
